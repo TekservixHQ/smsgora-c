@@ -1,0 +1,12 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
+
+Name: smsgora
+Description: SMS Gora SMS Gateway client for C and C++
+URL: https://tekservix.com/smsgora/docs/
+Version: @PROJECT_VERSION@
+Requires.private: libcurl
+Libs: -L${libdir} -lsmsgora
+Cflags: -I${includedir}
